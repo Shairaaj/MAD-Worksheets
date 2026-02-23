@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MAD-Ex-4</string>
+    <string name="student_registration_form">Student Registration form</string>
+    <string name="name">Name</string>
+    <string name="roll_no">Roll no</string>
+    <string name="enter_your_hobbies">Enter your hobbies</string>
+    <string name="button">Button</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="enter_the_gender">Enter the gender:</string>
+    <string name="dd_mm_yy">DD/MM/YY</string>
+</resources>
