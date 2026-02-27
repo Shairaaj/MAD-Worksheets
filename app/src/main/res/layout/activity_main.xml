@@ -139,15 +139,15 @@
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dancing"
-        tools:layout_editor_absoluteX="137dp"
+        android:text="@string/dancing"
+        tools:layout_editor_absoluteX="144dp"
         tools:layout_editor_absoluteY="329dp" />
 
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reading"
+        android:text="@string/reading"
         tools:layout_editor_absoluteX="250dp"
         tools:layout_editor_absoluteY="329dp" />
 
@@ -155,7 +155,7 @@
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reading"
+        android:text="@string/Reading"
         tools:layout_editor_absoluteX="27dp"
         tools:layout_editor_absoluteY="385dp" />
 

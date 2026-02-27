@@ -9,4 +9,8 @@
     <string name="female">Female</string>
     <string name="enter_the_gender">Enter the gender:</string>
     <string name="dd_mm_yy">DD/MM/YY</string>
+    <string name="swimming">Swimming</string>
+    <string name="dancing">Dancing</string>
+    <string name="reading">Reading</string>
+    <string name="Reading">Reading</string>
 </resources>
