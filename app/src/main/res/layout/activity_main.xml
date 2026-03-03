@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
         android:id="@+id/textView"
         android:layout_width="237dp"
         android:layout_height="50dp"
@@ -70,7 +70,7 @@
         app:layout_constraintVertical_bias="0.891" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/radioGroupGender"
         android:layout_width="302dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -105,7 +105,7 @@
         android:layout_marginBottom="12dp"
         android:text="@string/enter_the_gender"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupGender"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -113,50 +113,71 @@
         android:id="@+id/editTextDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="17dp"
         android:layout_marginEnd="164dp"
+        android:layout_marginBottom="38dp"
         android:ems="10"
         android:hint="@string/dd_mm_yy"
         android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="536dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/programmeSpinner" />
 
     <Spinner
         android:id="@+id/programmeSpinner"
         android:layout_width="203dp"
         android:layout_height="74dp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="445dp" />
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobbiesCB4" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/hobbiesCB1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="17dp"
         android:text="@string/swimming"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="329dp" />
+        app:layout_constraintEnd_toStartOf="@+id/hobbiesCB2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupGender" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/hobbiesCB2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="22dp"
         android:text="@string/dancing"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="329dp" />
+        app:layout_constraintEnd_toStartOf="@+id/hobbiesCB3"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupGender" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/hobbiesCB3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="76dp"
         android:text="@string/reading"
-        tools:layout_editor_absoluteX="250dp"
-        tools:layout_editor_absoluteY="329dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupGender" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/hobbiesCB4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="299dp"
         android:text="@string/Reading"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="385dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobbiesCB1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
