@@ -18,13 +18,9 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
         val nameXML = findViewById<EditText>(R.id.userNameET);
         val rollNoXML = findViewById<EditText>(R.id.rollNoET);
         val genderRadioGrp = findViewById<RadioGroup>(R.id.radioGroupGender);
@@ -50,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             val selectedRadioBtnID = genderRadioGrp.checkedRadioButtonId;
             val selectedGender = if(selectedRadioBtnID != -1){
-                findViewById<RadioButton>(selectedRadioBtnID).text.toString();
+                findViewById<RadioButton>(selectedRadioBtnID).text;
             }
             else{
                 "None Selected";
